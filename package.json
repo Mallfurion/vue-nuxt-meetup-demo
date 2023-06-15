@@ -1,0 +1,25 @@
+{
+  "name": "vue-nuxt-meetup-demo",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@types/canvas-confetti": "^1.6.0",
+    "@types/node": "^18",
+    "nuxt": "^3.5.2",
+    "sass": "^1.63.3",
+    "sass-loader": "^13.3.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "canvas-confetti": "^1.6.0",
+    "pinia": "^2.1.3"
+  }
+}
