@@ -1,9 +1,10 @@
 import { defineStore } from "pinia";
 import { pokemonData } from "~/data/pokemon";
+import { Pokemon } from "~/models/pokemon";
 
 export const usePokemonStore = defineStore("pokemon", () => {
   // state
-  const pokemons = ref(pokemonData);
+  const pokemons = ref<Pokemon[]>(pokemonData);
   //action
   const getNewPokemon = async () => {
     const { data, error } = await useFetch<any>(`https://pokeapi.co/api/v2/pokemon/${random()}`);
